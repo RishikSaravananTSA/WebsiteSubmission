@@ -1,0 +1,378 @@
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sustainable Eats</title>
+        <style>
+            body { 
+                font-family: Arial, sans-serif; 
+                margin: 0; 
+                padding: 0; 
+                color: #333; 
+                background: #c6d4cf;
+                text-align: center; 
+            }
+
+            header { 
+                background: #02391E; 
+                color: white; 
+                padding: 2em; 
+            }
+            header h1 {
+                font-size: 3em; 
+                margin: 0.5em 0;
+                line-height: 1.2;
+            }
+            header h2 {
+                font-size: em; 
+                margin: 0.5em 0;
+                line-height: 1.2;
+            }
+            .corner-images img {
+                position: absolute;
+                width: 200px; 
+                height: 200px;
+                top: 20px
+            }
+
+            .top-left {
+                left: 300;
+            }
+
+            .top-right {
+                right: 300;
+            }           
+            header p {
+                font-size: 1.2em; 
+                margin: 0;
+            }
+
+            nav { 
+                background: #02391E; 
+                padding: 0.5em 0; 
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 1em;
+                font-weight: bold;
+                transition: all 0.3s ease; 
+                padding: 0.5em 1em;
+                display: inline-block;
+                border-radius: 5px;
+            }
+
+            nav a:hover {
+                background: #45a049; 
+                color: #fff;
+                transform: scale(1.1);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+            .section { 
+                padding: 2em; 
+            }
+            .motto {
+                margin: 5em auto;
+                padding: 1.5em; 
+                border: 5px solid #4CAF50;
+                border-radius: 1000px;
+                background: #c6d4cf;
+                max-width: 1200px;
+                font-size: 1.75em;
+                font-weight: bold;
+                color: #137717;
+            }
+            
+            .menu-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+                gap: 2em;
+                justify-content: center;
+                margin: 0 auto;
+                max-width: 1200px;
+            }
+            .menu-item { 
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                text-align: center; 
+            }
+            .menu-item img { 
+                width: 200px; 
+                height: 200px; 
+                object-fit: cover; 
+                border-radius: 8px; 
+                margin-bottom: -5px; 
+            }
+            .menu-text {
+                font-size: 1em; 
+                margin: 0.5em 0;
+                line-height: 1.2;
+                color: #137717;
+            }
+            .button { 
+                background: #4CAF50; 
+                color: white; 
+                padding: 0.5em 1em; 
+                font-size: 1em; 
+                border: none; 
+                cursor: pointer; 
+                margin: 0;
+                border-radius: 0 0 8px 8px;
+                transition: all 0.3s ease; 
+            }
+            .button:hover { 
+                background: #45a049; 
+                color: #fff;
+                transform: scale(1.1);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+            .dish-details { 
+                display: none; 
+                text-align: center; 
+                margin-top: 10px; 
+            }
+            .aboutus {
+                margin: 2em auto;
+                padding: 1.5em;
+                border: 5px solid #4CAF50;
+                border-radius: 8px;
+                background-color: #c6d4cf;
+                max-width: 1200px;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #137717;
+            }
+
+            .OurVision{
+                margin: 2em auto;
+                padding: 1.5em;
+                border: 5px solid #4CAF50;
+                border-radius: 8px;
+                background-color: #c6d4cf;
+                max-width: 1200px;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #137717;
+            }
+
+            .contact {
+                margin: 2em auto;
+                padding: 1.5em;
+                border: 5px solid #4CAF50;
+                border-radius: 8px;
+                background-color: #c6d4cf;
+                max-width: 1000px;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #137717;   
+            }
+            footer { 
+                background: #333; 
+                color: white; 
+                padding: 1em; 
+                margin-top: 2em; 
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Urban Oasis</h1>
+            <p>Delicious food, Responsibly sourced.</p> 
+        </header>
+        <div class="corner-images">
+            <img src="https://i.imgur.com/hSDK2AB.png" class="top-left" >
+            <img src="https://i.imgur.com/hSDK2AB.png" class="top-right" >
+        </div>
+        <nav>
+            <a href="#aboutus">About Us</a>
+            <a href="#menu">Menu</a>
+            <a href="#OurVision"> Our Vision</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="motto">
+            <h2>So Fresh, Local and Sustainable, that you could call it an Oasis.</h2>
+        </div>
+        
+        <div id="menu" class="menu">
+            <div class="menu-text">
+                <h1>Our Menu</h1>
+            </div>
+        
+            <h2>Starters</h2>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.f7996de01180e30dc9b7ba907cf076d4?rik=gQLj%2fyrFoWPHPw&riu=http%3a%2f%2fwww.blog.sagmart.com%2fwp-content%2fuploads%2f2016%2f02%2fChilli-Bajji.jpg&ehk=gM%2bd%2bkNHbg995fbdHQ5%2f1uJnDT8H86LIMGPHLYT%2fm0g%3d&risl=&pid=ImgRaw&r=0" alt="Mirchi Bajji">
+                    <button class="button" onclick="toggleDetails(0)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-0">
+                        <h3>Mirchi Bajji</h3>
+                        <p>Handpicked green chilies, freshly ground chickpea flour, aromatic carom seeds, and responsibly sourced spices, fried to perfection in sustainably pressed oil</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.cookwithmanali.com/wp-content/uploads/2019/09/Samosa-Chaat-500x500.jpg" alt="Samosa Chaat">
+                    <button class="button" onclick="toggleDetails(1)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-1">
+                        <h3>Samosa Chaat</h3>
+                        <p>Flaky samosas made with locally sourced potatoes and spices, topped with homemade tamarind chutney, fresh mint yogurt, and crisp sev, garnished with handpicked cilantro and eco-friendly pomegranate seeds.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.Shmb2NJhwSnQsiK0F66yogHaHD?w=203&h=193&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Samosa">
+                    <button class="button" onclick="toggleDetails(2)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-2">
+                        <h3>Samosa</h3>
+                        <p>Golden samosas crafted with locally sourced potatoes, hand-ground spices, and wrapped in flaky, freshly prepared dough, fried to perfection in sustainably pressed oil.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.7MknuL_OpzZITvrt-mJeWAHaFj?rs=1&pid=ImgDetMain" alt="Gobi 65">
+                    <button class="button" onclick="toggleDetails(3)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-3">
+                        <h3>Gobi 65</h3>
+                        <p>Crispy Gobi 65 made with freshly sourced cauliflower florets, marinated in a blend of hand-ground spices, tangy yogurt, and aromatic curry leaves, fried to perfection in eco-friendly oil</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://veggieplanet.ca/wp-content/uploads/2023/03/pani_puri_90458_16x9.jpg" alt="Pani Puri">
+                    <button class="button" onclick="toggleDetails(4)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-4">
+                        <h3>Pani Puri</h3>
+                        <p>Crunchy puris made with whole-grain flour, filled with locally sourced mashed potatoes and spiced chickpeas, served with tangy tamarind water and freshly blended mint-coriander pani.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <h2>Main Course</h2>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OSK.HEROUvf7G1xLx57LLReUyBPNr9n1EFSVujmiZYjC3bn_ooM?rs=1&pid=ImgDetMain" alt="Pav Bhaji">
+                    <button class="button" onclick="toggleDetails(5)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-5">
+                        <h3>Pav Bhaji</h3>
+                        <p>A rich blend of vegetables, tomatoes, and spices, served with toasted buttered pav rolls.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th?id=OSK.4a2e83ccacf97848fb4cc52e650beeed&w=224&h=336&rs=2&qlt=80&o=6&cdv=1&pid=16.1 " alt="Palak Paneer">
+                    <button class="button" onclick="toggleDetails(6)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-6">
+                        <h3>Palak Paneer</h3>
+                        <p>Fresh paneer cubes in a rich, creamy spinach gravy made with locally sourced spinach and spices.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th?id=OSK.1b6466b98f70d0c1d91e36d6f463cfbd&w=196&h=196&rs=2&qlt=80&o=6&cdv=1&dpr=1.1&pid=16.1" alt="Butter Naan">
+                    <button class="button" onclick="toggleDetails(7)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-7">
+                        <h3>Butter Naan</h3>
+                        <p>Soft, pillowy naan brushed with butter, served warm.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://bing.com/th?id=OSK.b2deef036c22cd0c76ee045cb7601c4b" alt="Vegetable Biryani">
+                    <button class="button" onclick="toggleDetails(8)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-8">
+                        <h3>Vegetable Biryani</h3>
+                        <p>Fragrant basmati rice cooked with mixed vegetables and traditional spices.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th?id=OSK.36ef5c22ffde4107d3a85c5dd223627b&w=224&h=224&rs=2&qlt=80&o=6&cdv=1&dpr=1.1&pid=16.1" alt="Paneer Butter Masala">
+                    <button class="button" onclick="toggleDetails(9)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-9">
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Cubes of paneer in a smooth, creamy tomato-based gravy with butter and aromatic spices.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <h2>Dessert</h2>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.ZV0IJ0L57HdDe9rGO7QrmgHaHa?rs=1&pid=ImgDetMain" alt="Coconut Barfi">
+                    <button class="button" onclick="toggleDetails(10)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-10">
+                        <h3>Barfi</h3>
+                        <p>Delicious milk-based sweets, flavored with cardamom and garnished with pistachios and shaved coconut.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th?id=OSK.HEROR7MA-aH4BBq15MY0MwhwpsvB-MxohmmdtjOef-V5-oA&w=312&h=200&c=15&rs=2&o=6&dpr=1.1&pid=SANGAM" alt="Jalebi">
+                    <button class="button" onclick="toggleDetails(11)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-11">
+                        <h3>Jalebi</h3>
+                        <p>Crispy, sweet, and syrupy orange treats made with flour, deep-fried to perfection.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.6FiRo1BcZ6slH_AqT4le-AHaGU?w=238&h=204&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Kulfi">
+                    <button class="button" onclick="toggleDetails(12)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-12">
+                        <h3>Kulfi</h3>
+                        <p>Traditional Indian ice cream made from condensed milk, flavored with pistachio or mango.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th?id=OSK.HERO0arHD8X5nHOsrT01aFGbkaTu3Sfsrx3cF1349LhXqm0&w=312&h=200&c=15&rs=2&o=6&dpr=1.1&pid=SANGAM" alt="Rasgulla">
+                    <button class="button" onclick="toggleDetails(13)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-13">
+                        <h3>Rasgulla</h3>
+                        <p>Soft and spongy sweet made with fresh chhena, soaked in sugar syrup.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.pLK1sd-tPYkCdGepBVStQQHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Gulab Jamun">
+                    <button class="button" onclick="toggleDetails(14)">Reveal Item and Ingredients</button>
+                    <div class="dish-details" id="details-14">
+                        <h3>Gulab Jamun</h3>
+                        <p>Organic milk solids, fair-trade sugar, sustainably sourced rose water.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="aboutus" class="aboutus">
+            <h1>
+                About Us
+            </h1>
+            <h3>Urban Oasis is a place where plant-based indian cuisine meet city life. We go to the local market as often as possible, sourcing crops from small family-run farms, in an effort to reduce our footprint. We have created cozy and welcoming spaces where you can catch your breath, an oasis amidst the city's blaring noise.
+                
+                Come to Urban Oasis and discover how delicious and gratifying vegetarian dining can be--be it a lunch stop-in, dinner rendezvous, or lazy weekend brunch. Your choice will nourish your body and be kind to the planet as well. 
+                
+                Welcome to your new favorite escape; every bite is a step toward a healthier, sustainable world.
+                </h3>
+        </div>
+        <div id="OurVision" class="OurVision">
+            <h1>Our Vision</h1>
+            <h3>We aim to be more than just a restaurant; we are an homage to seasonal food that celebrates fresh, local produce and dedicated eating. We have a special gimmick, being, there are no names of the items, you see which item looks the most appealing and check it out! Urban Oasis believes that one must nourish his body and soul.</h3>
+        
+        </div>
+        <div id="contact" class="contact"> 
+            <h1>Contact</h1>
+            <h3> Work and Buisness: Rishik.Saravanan@gmail.com</h3>
+            <h3> Customer Service: Sri.Vulugandam@gmail.com</h3>
+            <h3> Logo Design: Sharan.Rajamahendram@gmail.com</h3>
+            <h3> Menu Credits : Thanush.Anantha@gmail.com</h3>
+            <h3> Advertiser : Sibi.Ramasamy@gmail.com</h3>
+        </div>
+        <footer>
+            <p>&copy; 2025 Urban Oasis. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function toggleDetails(index) {
+                const details = document.getElementById(`details-${index}`);
+                const button = details.previousElementSibling;
+
+                if (details.style.display === 'none' || details.style.display === '') {
+                    details.style.display = 'block';
+                    button.textContent = 'Hide';
+                } else {
+                    details.style.display = 'none';
+                    button.textContent = 'Reveal Item and Ingredients';
+                }
+            }
+        </script>
+    </body>
+    </html>
